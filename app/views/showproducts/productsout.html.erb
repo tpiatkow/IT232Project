@@ -1,0 +1,17 @@
+<center><h1>Here are all our DELICIOUS smoothie flavors that <%= @customer_name %> has ordered! </h1></center><br /> <br />
+    
+  <center><table width = 65% border = 1> 
+     <tr> 
+     <th> Smoothie Name </th>
+     <th> Smoothie Description </th>
+     <th>Price </th>
+     </tr>   
+   
+   <% @product_list.each do |m| %>     
+     <tr> 
+     <td> <%= m.name  %> </td>
+     <td> <%= m.description %> </td>
+     <td> <%= m.price %></td>
+     </tr> 
+    <% end %> 
+    </table> </center><br /> <br />

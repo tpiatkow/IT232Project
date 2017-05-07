@@ -1,0 +1,13 @@
+<h2>Please enter the Last Name of the Customer for whom you want to see past Smoothie Orders </h2>
+
+  <%= form_tag(showproducts_productsout_path, :controller => "showproducts", :action => "productsout", :method => "post") do %>
+   
+  <div class="field">
+          <%= label_tag :Customer_name %><br />
+          <%= text_field_tag :customer_name_in %>
+  </div>
+   
+      <div class="actions">
+              <%= submit_tag "Submit Customer Name" %>
+  </div>
+   <% end %>
